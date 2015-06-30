@@ -1,0 +1,3 @@
+odiseo_motor_optimo_homepage:
+    path:     /
+    defaults: { _controller: OdiseoMotorOptimoBundle:Default:index }

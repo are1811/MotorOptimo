@@ -1,0 +1,7 @@
+odiseo_motor_optimo:
+    resource: "@OdiseoMotorOptimoBundle/Resources/config/main.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

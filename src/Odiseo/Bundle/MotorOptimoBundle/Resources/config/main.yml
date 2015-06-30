@@ -1,0 +1,8 @@
+odiseo_motor_optimo_frontend:
+    resource: "@OdiseoMotorOptimoBundle/Resources/config/routing/frontend/main.yml"
+    prefix:   /
+
+odiseo_motor_optimo_backend:
+    resource: "@OdiseoMotorOptimoBundle/Resources/config/routing/backend/main.yml"
+    prefix:   /admin
+    
