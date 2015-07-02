@@ -6,6 +6,14 @@ odiseo_motor_optimo_backend_adminProducts:
     path:     /adminProducts
     defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Products:adminProducts" }  
     
+odiseo_motor_optimo_backend_adminSlider:
+    path:     /adminSlider
+    defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Slider:adminSlider" }  
+
+odiseo_motor_optimo_backend_adminTips:
+    path:     /adminTips
+    defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Tips:adminTips" } 
+    
 odiseo_motor_optimo_backend_viewListProducts:
     path:     /adminProducts/listProducts
     defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Products:viewAllProducts" }  

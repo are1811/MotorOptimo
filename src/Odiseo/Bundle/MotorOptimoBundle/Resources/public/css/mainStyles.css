@@ -6,7 +6,7 @@
 #header {
 	background-color: #808080;
     margin: auto;
-    height: 200px;
+    height: 150px;
     width: 900px;
 }
 
@@ -24,6 +24,11 @@
     width: 900px;
 }
 
+#content-admin {
+	background-color: #c0c0c0;
+    float: left;
+}
+
 #menu {
 	background-color: #000000;
     margin: auto;
@@ -37,4 +42,74 @@
     height: 40px;
     width: 200px;
     float: left;	
+}
+
+#slider {
+	background-color: #008080;
+    margin: auto;
+    height: 150px;
+    width: 800px;	
+}
+
+#slider-tips
+{
+	background-color: #008080;
+    margin: auto;
+    height: 500px;
+    width: 800px;	
+}
+
+#post-products {
+	background-color: #8080ff;
+    margin: auto;
+    margin-top: 10px;
+    height: 300px;
+    width: 800px;	
+}
+
+#contact
+{
+	background-color: #008080;
+    margin: auto;
+    height: auto;
+    width: 800px;	
+}
+
+#menu-admin {
+	background-color: #2ebe59;
+    margin: auto;
+    height: 100px;
+    width: 100%;
+}
+
+#menu-admin .item {
+	background-color: #2ebe59;
+	float: left;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+}
+
+#menu-item {
+	background-color: #279a78;
+	float: left;
+    margin: auto;
+    height: 900px;
+    width: 120px;
+}
+
+#logo {
+	float: left;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 110px;
+    width: 250px;
+}
+
+#search {
+	float: left;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 300px;
 }

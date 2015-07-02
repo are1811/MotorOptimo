@@ -8,16 +8,6 @@ class MainController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('OdiseoMotorOptimoBundle:backend:admin.html.twig', array());
-    }
-
-    public function adminProductsAction() 
-    {
-    	return $this->render('OdiseoMotorOptimoBundle:backend:productos.html.twig', array());    	 
-    }
-    
-    public function viewAllProductsAction() 
-    {
-    	return $this->render('OdiseoMotorOptimoBundle:backend:admin.html.twig', array());
+        return $this->render('OdiseoMotorOptimoBundle:backend/products:products.html.twig', array());
     }
 }

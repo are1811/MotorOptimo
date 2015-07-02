@@ -1,23 +1,34 @@
 {% extends '::base.html.twig' %} 
 
-{% block title %}Administrar: Motor Optimo{% endblock %} 
+{% block title %}Panel de administración | Motor Optimo{% endblock %} 
+
+{% block stylesheets %}
+{% stylesheets output='css/frontend.min.css' filter='cssrewrite'
+	'bundles/odiseomotoroptimo/css/mainstyles.css'
+%}
+<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+{% endstylesheets %}
+{% endblock %}
 
 {% block body %}
-<h2>Administrar Sitio</h2>
-<div class="menu">
-	<ul>
-		<li><a href="{{ path('odiseo_motor_optimo_backend_adminProducts') }}">Productos</a></li>
 
-		<li><a href="#">Tips del mes</a></li>
-
-		<li><a href="#">Slider</a></li>
-	</ul>
+<div id="menu-admin">
+	<div id="title_panel">
+		<h2>Panel de administración</h2>
+	</div>
+	<div class="item"><a href="{{ path('odiseo_motor_optimo_backend_adminProducts') }}">Productos</a></div>
+	<div class="item"><a href="{{ path('odiseo_motor_optimo_backend_adminTips') }}">Tips del mes</a></div>
+    <div class="item"><a href="{{ path('odiseo_motor_optimo_backend_adminSlider') }}">Slider</a></div>
 </div>
 
-<div class="content">
+
+<div id="menu-item">
+{% block menuItem %}{% endblock %}
+</div>
+<div class="content-admin">
 {% block content %}{% endblock %}
 </div>
-
+																																																																																		
 {% endblock %}
 
  

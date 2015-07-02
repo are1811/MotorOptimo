@@ -8,11 +8,11 @@ class ProductsController extends Controller
 {
     public function adminProductsAction() 
     {
-    	return $this->render('OdiseoMotorOptimoBundle:backend:products.html.twig', array());    	 
+    	return $this->render('OdiseoMotorOptimoBundle:backend/products:products.html.twig', array());    	 
     }
     
     public function viewAllProductsAction() 
     {
-    	return $this->render('OdiseoMotorOptimoBundle:backend:products.html.twig', array());
+    	return $this->render('OdiseoMotorOptimoBundle:backend/products:products.html.twig', array());
     }
 }

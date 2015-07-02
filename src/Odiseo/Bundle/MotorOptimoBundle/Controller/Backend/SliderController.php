@@ -6,8 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class SliderController extends Controller
 {
-    /*public function indexAction()
+    public function adminSliderAction() 
     {
-        return $this->render('OdiseoMotorOptimoBundle:backend:admin.html.twig', array());
-    }*/
+    	return $this->render('OdiseoMotorOptimoBundle:backend/slider:slider.html.twig', array());    	 
+    }
 }
