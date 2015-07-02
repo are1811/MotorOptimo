@@ -1,0 +1,40 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#header {
+	background-color: #808080;
+    margin: auto;
+    height: 200px;
+    width: 900px;
+}
+
+#footer {
+	background-color: #808080;
+    margin: auto;
+    height: 100px;
+    width: 900px;	
+}
+
+#content {
+	background-color: #c0c0c0;
+    margin: auto;
+    height: auto;
+    width: 900px;
+}
+
+#menu {
+	background-color: #000000;
+    margin: auto;
+    height: 50px;
+    width: 900px;	
+}
+
+#menu .item{
+	background-color: #ff0000;
+    margin: 5px 50px;
+    height: 40px;
+    width: 200px;
+    float: left;	
+}

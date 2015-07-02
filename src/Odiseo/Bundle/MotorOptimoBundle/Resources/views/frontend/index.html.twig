@@ -1,1 +1,33 @@
-<img src="{{ asset('bundles/odiseomotoroptimo/images/home.jpg') }}" alt="Motor Optimo">
+{% extends '::base.html.twig' %} 
+
+{% block title %}Motor Optimo{% endblock %} 
+
+{% block stylesheets %}
+{% stylesheets output='css/frontend.min.css' filter='cssrewrite'
+	'bundles/odiseomotoroptimo/css/mainstyles.css'
+%}
+<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+{% endstylesheets %}
+{% endblock %}
+
+{% block body %}
+
+<div id="header">
+<h1>header</h1>
+</div>
+
+<div id="menu">
+	<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_products') }}">Inicio</a></div>
+	<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_tips') }}">Consejo del mes</a></div>
+	<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_contact') }}">Contacto</a></div>
+</div>
+
+<div id="content">
+{% block content %}{% endblock %}
+</div>
+
+<div id="footer">
+<h1>footer</h1>
+</div>
+
+{% endblock %}

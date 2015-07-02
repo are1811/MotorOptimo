@@ -1,0 +1,12 @@
+odiseo_motor_optimo_backend_homepage:
+    path:     /
+    defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Main:index" }
+    
+odiseo_motor_optimo_backend_adminProducts:
+    path:     /adminProducts
+    defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Products:adminProducts" }  
+    
+odiseo_motor_optimo_backend_viewListProducts:
+    path:     /adminProducts/listProducts
+    defaults: { _controller: "OdiseoMotorOptimoBundle:Backend/Products:viewAllProducts" }  
+ 
