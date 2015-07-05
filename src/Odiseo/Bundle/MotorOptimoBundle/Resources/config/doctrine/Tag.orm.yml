@@ -1,0 +1,18 @@
+Odiseo\Bundle\MotorOptimoBundle\Entity\Tag:
+    type: entity
+    table: tag
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tagName:
+            type: string
+            length: 255
+    manyToMany:
+       posts:
+         targetEntity: Post
+         mappedBy: tags
+    lifecycleCallbacks: {  }

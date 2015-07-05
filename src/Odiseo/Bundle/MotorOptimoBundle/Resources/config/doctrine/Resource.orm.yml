@@ -1,0 +1,32 @@
+Odiseo\Bundle\MotorOptimoBundle\Entity\Resource:
+    type: entity
+    table: resource
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        resourceType:
+            type: string
+            length: 255
+            nullable: true
+        fileName:
+            column: fileName
+            type: string
+            length: 255
+        created:
+            column: created_at
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updated:
+            column: updated_at
+            type: datetime
+            nullable: true
+            gedmo:
+              timestampable:
+                on: update
+    lifecycleCallbacks: {  }

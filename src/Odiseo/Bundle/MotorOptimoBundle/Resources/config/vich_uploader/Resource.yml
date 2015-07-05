@@ -1,0 +1,4 @@
+Odiseo\Bundle\MotorOptimoBundle\Entity\Resource:
+    file:
+        mapping:           resources_files
+        filename_property: file_name
