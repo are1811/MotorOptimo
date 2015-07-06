@@ -32,17 +32,26 @@
 	</div><!-- End Header -->
 	
 	<div id="menu">
+		<div id="menu-top"></div>
+		<div class="menu-margin"></div>
+		<div class="separator"></div>		
 		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_products') }}">Inicio</a></div>
+		<div class="separator"></div>
 		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_tips') }}">Consejo del mes</a></div>
+		<div class="separator"></div>
 		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_contact') }}">Contacto</a></div>
+		<div class="separator"></div>		
+		<div class="menu-margin"></div>
+		<div id="menu-bottom"></div>		
 	</div>
 	
 	<div id="content">
 	{% block content %}{% endblock %}
 	</div>
 	
+    <div id="separator-footer"></div>
 	<div id="footer">
-	<h1>footer</h1>
+	
 	</div>
 
 {% endblock %}

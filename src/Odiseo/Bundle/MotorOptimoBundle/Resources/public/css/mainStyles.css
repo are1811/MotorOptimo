@@ -13,26 +13,33 @@ body {
     margin: auto;
     height: 160px;
     width: 960px;
-    background: rgba(0,0,0,1);
-	background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(61,65,66,1) 50%, rgba(0,0,0,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(50%, rgba(61,65,66,1)), color-stop(100%, rgba(0,0,0,1)));
-	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(61,65,66,1) 50%, rgba(0,0,0,1) 100%);
-	background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(61,65,66,1) 50%, rgba(0,0,0,1) 100%);
-	background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(61,65,66,1) 50%, rgba(0,0,0,1) 100%);
-	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(61,65,66,1) 50%, rgba(0,0,0,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+	background: rgba(51,51,51,1);
+	background: -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(121,124,125,1) 50%, rgba(51,51,51,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(51,51,51,1)), color-stop(50%, rgba(121,124,125,1)), color-stop(100%, rgba(51,51,51,1)));
+	background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(121,124,125,1) 50%, rgba(51,51,51,1) 100%);
+	background: -o-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(121,124,125,1) 50%, rgba(51,51,51,1) 100%);
+	background: -ms-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(121,124,125,1) 50%, rgba(51,51,51,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,51,51,1) 0%, rgba(121,124,125,1) 50%, rgba(51,51,51,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333', GradientType=0 );
 	position: relative;
 }
 
 #footer {
-	background-color: #808080;
+	background-color: #333333;
     margin: auto;
     height: 100px;
     width: 960px;	
 }
 
+#separator-footer {
+	background-color: white;
+    margin: auto;
+    height: 5px;
+    width: 960px;	
+}
+
 #content {
-	background-color: #c0c0c0;
+	background-color: white;
     margin: auto;
     height: auto;
     width: 960px;
@@ -46,22 +53,94 @@ body {
 #menu {
 	background-color: white;
     margin: auto;
-    height: 50px;
+    height: 45px;
     width: 960px;	
+    position: relative;
 }
 
-#menu .item{
-	background-color: #ff0000;
-    margin: 5px 50px;
-    height: 40px;
-    width: 200px;
+#menu-top {
+	background-color: white;
+    margin: auto;
+    height: 5px;
+    width: 960px;	
+    position: absolute;
+}
+
+#menu-bottom {
+	background-color: white;
+    margin: auto;
+    height: 5px;
+    width: 960px;	
+    position: absolute;
+    top: 40px;
+}
+
+#menu .item,  #menu .item:hover {
+	font-family: 'Arial Black';
+	font-size: 18px;	
+	font-color: white;
+	text-align: center;
+}
+
+#menu .item a:visited {
+	text-decoration: none;  
+	color: white;	
+}
+
+#menu .item a:link, #menu .item a:active, #menu .item a:hover {
+	text-decoration: none;  
+	color: #fe0000;
+}
+
+#menu .item {
+	background-color: #fe0000;
+    margin: auto;
+    margin-top: 5px;
+    height: 35px;
+    width: 290px;	
+    float: left;
+}
+
+#menu .item:hover {
+	background-color: #ffffff;
+	border-style: solid;
+    border-width: 5px;
+    border-color: red;
+    margin: auto;
+    margin-top: 5px;
+    height: 25px;
+    width: 280px;	
+    float: left;
+}
+
+.menu-margin {
+	background-color: #333333;
+	margin: auto;
+	margin-top: 5px;
+    height: 35px;
+    width: 35px;	
+    float: left;	
+}
+
+.separator {
+	background-color: white;
+    height: 35px;
+    width: 5px;	
     float: left;	
 }
 
 #slider {
 	background-color: #008080;
     margin: auto;
-    height: 150px;
+    margin-bottom: 5px;
+    height: 300px;
+    width: 800px;	
+}
+
+.separator-post {
+	background-color: #747474;
+    margin: auto;
+    height: 5px;
     width: 800px;	
 }
 
@@ -76,7 +155,7 @@ body {
 #post-products {
 	background-color: #8080ff;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     height: 300px;
     width: 800px;	
 }
