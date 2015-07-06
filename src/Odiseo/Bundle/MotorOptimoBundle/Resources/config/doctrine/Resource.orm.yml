@@ -1,0 +1,28 @@
+Odiseo\Bundle\MotorOptimoBundle\Entity\Resource:
+    type: entity
+    table: Resource
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        path:
+            type: string
+            length: 255
+        date:
+            column: date
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create     
+        resourceType:
+            type: integer
+            length: 1
+  
+    oneToMany:
+        posts:
+            targetEntity: Post
+            mappedBy: resource
+    lifecycleCallbacks: {  }

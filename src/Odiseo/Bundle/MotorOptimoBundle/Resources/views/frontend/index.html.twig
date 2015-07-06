@@ -12,18 +12,24 @@
 
 {% block body %}
 	
-	<div id="header">
+	<div id="header"><!-- Header -->
 		<div id="logo">
 			<img src="{{ asset('bundles/odiseomotoroptimo/images/logo_motor_optimo.jpg') }}" alt="Logo">
 		</div>
-		<div id="search">
-			<img src="{{ asset('bundles/odiseomotoroptimo/images/motorcraft.jpg') }}" alt="motorcraft">
-			<form action="">
-				<input type="text" name="fname">
-			</form>
-		</div>
-	
-	</div>
+		<div id="search"><!-- Search -->
+			<div id="search-text">
+				Respaldado por:
+			</div>
+			<div id="logo-motorcraft">
+				<img src="{{ asset('bundles/odiseomotoroptimo/images/logo_motorcraft.png') }}" alt="motorcraft">
+			</div>
+			<div id="search-form">
+				<form action="">
+					<input type="text" name="fname" size="40">
+				</form>
+			</div>
+		</div><!-- End Search -->
+	</div><!-- End Header -->
 	
 	<div id="menu">
 		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_products') }}">Inicio</a></div>
