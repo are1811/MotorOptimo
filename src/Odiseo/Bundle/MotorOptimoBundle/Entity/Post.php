@@ -2,70 +2,47 @@
 
 namespace Odiseo\Bundle\MotorOptimoBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
+use DateTime;
 
-/**
- * Post
- *
- * @ORM\Table()
- * @ORM\Entity
- */
 class Post
 {
-    /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="text", type="string", length=255)
-     */
+    private $title;    
+    
     private $text;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="title", type="string", length=255)
-     */
-    private $title;
+    private $resource;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="id_resource", type="string", length=255)
-     */
-    private $idResource;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="post_type", type="string", length=255)
-     */
+    private $tag;
+    
     private $postType;
-
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
+    
+    private $date;
+    
+    
+    public function __construct()
+    {
+    	$this->date = new DateTime('now');
+    }
+    
     public function getId()
     {
         return $this->id;
     }
 
-    /**
-     * Set text
-     *
-     * @param string $text
-     * @return Post
-     */
+    public function setTitle($title)
+    {
+    	$this->title = $title;
+    
+    	return $this;
+    }
+    
+    public function getTitle()
+    {
+    	return $this->title;
+    }
+    
     public function setText($text)
     {
         $this->text = $text;
@@ -73,68 +50,29 @@ class Post
         return $this;
     }
 
-    /**
-     * Get text
-     *
-     * @return string 
-     */
     public function getText()
     {
         return $this->text;
     }
 
-    /**
-     * Set title
-     *
-     * @param string $title
-     * @return Post
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
+    public function getResource() {
+    	return $this->$resource;
     }
-
-    /**
-     * Get title
-     *
-     * @return string 
-     */
-    public function getTitle()
-    {
-        return $this->title;
+    
+    public function setResource(Resource $resource) {
+    	$this->resource = $resource;
+    	return $this;
     }
-
-    /**
-     * Set idResource
-     *
-     * @param string $idResource
-     * @return Post
-     */
-    public function setIdResource($idResource)
-    {
-        $this->idResource = $idResource;
-
-        return $this;
+    
+    public function getTag() {
+    	return $this->$tag;
     }
-
-    /**
-     * Get idResource
-     *
-     * @return string 
-     */
-    public function getIdResource()
-    {
-        return $this->idResource;
+    
+    public function setTag(Tag $tag) {
+    	$this->tag = $tag;
+    	return $this;
     }
-
-    /**
-     * Set postType
-     *
-     * @param string $postType
-     * @return Post
-     */
+    
     public function setPostType($postType)
     {
         $this->postType = $postType;
@@ -142,13 +80,20 @@ class Post
         return $this;
     }
 
-    /**
-     * Get postType
-     *
-     * @return string 
-     */
     public function getPostType()
     {
         return $this->postType;
     }
+    
+    public function setDate($date)
+    {
+    	$this->date = $date;
+    
+    	return $this;
+    }
+    
+    public function getDate()
+    {
+    	return $this->date;
+    }    
 }

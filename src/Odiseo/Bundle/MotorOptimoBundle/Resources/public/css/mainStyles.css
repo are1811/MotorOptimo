@@ -3,6 +3,12 @@
 	padding: 0px;
 }
 
+body {
+	height: 100%;
+	weight: 100%;
+	background-image:url("../images/fondo.jpg");
+}
+
 #header {
 	background-color: #808080;
     margin: auto;

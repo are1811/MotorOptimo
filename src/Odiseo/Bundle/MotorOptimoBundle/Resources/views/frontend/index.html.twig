@@ -11,32 +11,32 @@
 {% endblock %}
 
 {% block body %}
-
-<div id="header">
-	<div id="logo">
-		<img src="{{ asset('bundles/odiseomotoroptimo/images/logo_motor_optimo.jpg') }}" alt="Logo">
+	
+	<div id="header">
+		<div id="logo">
+			<img src="{{ asset('bundles/odiseomotoroptimo/images/logo_motor_optimo.jpg') }}" alt="Logo">
+		</div>
+		<div id="search">
+			<img src="{{ asset('bundles/odiseomotoroptimo/images/motorcraft.jpg') }}" alt="motorcraft">
+			<form action="">
+				<input type="text" name="fname">
+			</form>
+		</div>
+	
 	</div>
-	<div id="search">
-		<img src="{{ asset('bundles/odiseomotoroptimo/images/motorcraft.jpg') }}" alt="motorcraft">
-		<form action="">
-			<input type="text" name="fname">
-		</form>
+	
+	<div id="menu">
+		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_products') }}">Inicio</a></div>
+		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_tips') }}">Consejo del mes</a></div>
+		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_contact') }}">Contacto</a></div>
 	</div>
-
-</div>
-
-<div id="menu">
-	<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_products') }}">Inicio</a></div>
-	<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_tips') }}">Consejo del mes</a></div>
-	<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_contact') }}">Contacto</a></div>
-</div>
-
-<div id="content">
-{% block content %}{% endblock %}
-</div>
-
-<div id="footer">
-<h1>footer</h1>
-</div>
+	
+	<div id="content">
+	{% block content %}{% endblock %}
+	</div>
+	
+	<div id="footer">
+	<h1>footer</h1>
+	</div>
 
 {% endblock %}
