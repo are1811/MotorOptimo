@@ -22,16 +22,15 @@ class ProductsController extends Controller
     public function addProductsAction()
     {
     	$resource = new Resource();
-    	$resource->setPath('bundles/odiseomotoroptimo/images/bujia-ngk-standard.jpg');
+    	$resource->setPath('bundles/odiseomotoroptimo/images/motorcraft_battery.jpg');
     	$resource->setResourceType('1');
     	
     	$tag = new Tag();
-    	$tag->setTag('Bujias');
+    	$tag->setTag('Baterias');
     	
     	$product = new Post();
-    	$product->setTitle('Bujias NGK');
-    	$product->setText('La bujía de encendido NGK es una pieza eléctrica que trabaja en alta voltaje, por lo tanto, los equipos para test 
-						   deben ser compatibles a ese voltaje');
+    	$product->setTitle('Bateria Motorcraft');
+    	$product->setText('Los Acumuladores Motorcraft están diseñados con la más alta tecnología y estrictas normas de calidad. Nuestras baterías ofrecen calidad excepcional y un precio competitivo.');
     	$product->setPostType('1');    
     	
     	// relaciona este producto con un tag

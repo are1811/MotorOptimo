@@ -56,9 +56,9 @@ class Post
     }
 
     public function getResource() {
-    	return $this->$resource;
+    	return $this->resource;
     }
-    
+       
     public function setResource(Resource $resource) {
     	$this->resource = $resource;
     	return $this;

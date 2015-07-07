@@ -78,7 +78,7 @@ body {
 #menu .item,  #menu .item:hover {
 	font-family: 'Arial Black';
 	font-size: 18px;	
-	font-color: white;
+	color: white;
 	text-align: center;
 }
 
@@ -87,7 +87,7 @@ body {
 	color: white;	
 }
 
-#menu .item a:link, #menu .item a:active, #menu .item a:hover {
+#menu .item a:link, #menu .item a:active, #menu .item a:hover, #menu .item:hover {
 	text-decoration: none;  
 	color: #fe0000;
 }
@@ -152,14 +152,58 @@ body {
     width: 800px;	
 }
 
-#post-products {
-	background-color: #8080ff;
+.post-products {
+	background-color: white;
     margin: auto;
     margin-top: 5px;
     height: 300px;
     width: 800px;	
+    position: relative;
 }
 
+.post-title {
+    height: 20px;
+    width: 400px;	
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+
+.post-text {
+    height: 210px;
+    width: 400px;	
+    position: absolute;
+    left: 400px;
+    top: 60px;
+}
+
+.post-title p {
+	color: #333333;
+	font-family: 'Arial Black';
+	font-size: 18px;	
+}
+
+.post-text p {
+	color: #333333;
+	font-family: 'Arial';
+	font-size: 12px;	
+}
+
+.post-img {
+    height: 300px;
+    width: 400px;	
+    position: absolute;
+    left: 0px;
+    top: 0px;	
+}
+
+.post-img img{
+    height: auto;
+    max-height: 300px;
+    width: auto;	
+    max-width:400px;
+}
+	
 #contact
 {
 	background-color: #008080;

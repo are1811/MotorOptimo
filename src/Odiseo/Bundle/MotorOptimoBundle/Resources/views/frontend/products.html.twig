@@ -3,12 +3,17 @@
 {% block content %}
 
 <div id="slider">
-slider
+
 </div>
+
+{% for post in posts %}
 <div class="separator-post"></div>
-<div id="post-products">
-productos
+<div class="post-products">
+	<div class="post-title"><p>{{ post.title }}</p></div>
+	<div class="post-text"><p>{{ post.text }}</p></div>
+	<div class="post-img"><img src="{{ asset('') ~ post.resource.path }}" alt="{{ post.title }}"></div>
 </div>
+{% endfor %}
 
 {% endblock %}
 
