@@ -1,10 +1,6 @@
 odiseo_motor_optimo_frontend_homepage:
     path:     /
     defaults: { _controller: "OdiseoMotorOptimoBundle:Frontend/Home:index" }
-
-odiseo_motor_optimo_frontend_products:
-    path:     /products
-    defaults: { _controller: "OdiseoMotorOptimoBundle:Frontend/Products:index" }  
     
 odiseo_motor_optimo_frontend_tips:
     path:     /tips
@@ -13,3 +9,7 @@ odiseo_motor_optimo_frontend_tips:
 odiseo_motor_optimo_frontend_contact:
     path:     /contact
     defaults: { _controller: "OdiseoMotorOptimoBundle:Frontend/Contact:index" }
+    
+odiseo_motor_optimo_frontend_search:
+    path:     /search
+    defaults: { _controller: "OdiseoMotorOptimoBundle:Frontend/Search:index" }

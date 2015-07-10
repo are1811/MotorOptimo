@@ -5,6 +5,7 @@
 {% block stylesheets %}
 {% stylesheets output='css/frontend.min.css' filter='cssrewrite'
 	'bundles/odiseomotoroptimo/css/mainstyles.css'
+	'bundles/odiseomotoroptimo/css/bootstrap.css'
 %}
 <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
 {% endstylesheets %}
@@ -23,8 +24,9 @@
 			<div id="logo-motorcraft">
 				<img src="{{ asset('bundles/odiseomotoroptimo/images/logo_motorcraft.png') }}" alt="motorcraft">
 			</div>
+			
 			<div id="search-form">
-				<form action="">
+				<form action="{{ path('odiseo_motor_optimo_frontend_search') }}" method="post">
 					<input type="text" name="fname" size="40">
 				</form>
 			</div>
@@ -35,7 +37,7 @@
 		<div id="menu-top"></div>
 		<div class="menu-margin"></div>
 		<div class="separator"></div>		
-		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_products') }}">Inicio</a></div>
+		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_homepage') }}">Inicio</a></div>
 		<div class="separator"></div>
 		<div class="item"><a href="{{ path('odiseo_motor_optimo_frontend_tips') }}">Consejo del mes</a></div>
 		<div class="separator"></div>
@@ -53,5 +55,13 @@
 	<div id="footer">
 	
 	</div>
-
+{% endblock %}
+{% block javascripts %}
+	{% javascripts output='js/frontend.min.js'
+           'bundles/odiseomotoroptimo/js/vendor/jquery-1.11.3.min.js'
+		   'bundles/odiseomotoroptimo/js/vendor/bootstrap.js'
+		   'bundles/odiseomotoroptimo/js/main.js'
+		%}
+		<script type="text/javascript" src="{{ asset_url }}"></script>
+		{% endjavascripts %}
 {% endblock %}

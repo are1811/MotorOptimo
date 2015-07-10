@@ -8,6 +8,10 @@ class HomeController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('OdiseoMotorOptimoBundle:frontend:products.html.twig', array());
+    	$em = $this->getDoctrine()->getManager();
+    	$posts = $em->getRepository('OdiseoMotorOptimoBundle:Post')->findByPostType('1');
+    	$slider = $em->getRepository('OdiseoMotorOptimoBundle:Post')->findByPostType('2');
+    	
+        return $this->render('OdiseoMotorOptimoBundle:frontend:products.html.twig', array('posts' => $posts, 'slider' => $slider));
     }
 }

@@ -22,16 +22,16 @@ class ProductsController extends Controller
     public function addProductsAction()
     {
     	$resource = new Resource();
-    	$resource->setPath('bundles/odiseomotoroptimo/images/motorcraft_battery.jpg');
-    	$resource->setResourceType('1');
+    	$resource->setPath('bundles/odiseomotoroptimo/images/slider/kuga.jpg');
+    	$resource->setResourceType('1');	// 1:Imagen 2:Video
     	
     	$tag = new Tag();
-    	$tag->setTag('Baterias');
+    	$tag->setTag('Ford kuga');
     	
     	$product = new Post();
-    	$product->setTitle('Bateria Motorcraft');
-    	$product->setText('Los Acumuladores Motorcraft están diseñados con la más alta tecnología y estrictas normas de calidad. Nuestras baterías ofrecen calidad excepcional y un precio competitivo.');
-    	$product->setPostType('1');    
+    	$product->setTitle('Ford kuga');
+    	$product->setText('');
+    	$product->setPostType('2');    // 1:Post 2:Slider 3:Tips
     	
     	// relaciona este producto con un tag
     	$product->setTag($tag);

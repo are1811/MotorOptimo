@@ -3,7 +3,24 @@
 {% block content %}
 
 <div id="slider">
-
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    	<li data-target="#myCarousel" data-slide-to="1"></li>
+	        <li data-target="#myCarousel" data-slide-to="2"></li>
+	        <li data-target="#myCarousel" data-slide-to="3"></li>                 
+	    </ol>
+	
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	        {% for post in slider %}
+	        	<div class="item{{ loop.first?' active':'' }}">
+		    	    <img src="{{ asset('') ~ post.resource.path }}" alt="{{ post.title }}" width="400" height="500">
+		        </div>
+			{% endfor %}
+		</div> 
+	</div>
 </div>
 
 {% for post in posts %}
